@@ -922,9 +922,9 @@ section {
 @media screen and (max-width: 560px) {
   .bio {
     height: 100vh;
-    background: url("../img/main_two.jpg");
-    background-size: auto 100%;
-    background-position: 65% 100%;
+    background: url("../img/bio2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .bio p {
     font-size: 30px;
