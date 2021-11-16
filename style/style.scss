@@ -8,6 +8,9 @@ body{
     background: #222222;
     overflow-X: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .little_menu,
 .navbar,
