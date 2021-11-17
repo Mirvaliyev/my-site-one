@@ -3,6 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+// scroll
+::-webkit-scrollbar {
+    width: 10px;
+    max-width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #222222;
+    border: 1px solid white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    // background-image: url(../img/scroll.png);
+    // background-size:100% 100%;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255);
+}
+
 body{
     // position: relative;
     background: #222222;
@@ -58,15 +81,15 @@ html{
     }
     // span classlar
     .span_add{
-        border: 1px solid black;
-        background-color: black;
+        border: 1px solid yellowgreen;
+        background-color: yellowgreen;
     }
     .span1_add{
         transform: rotateZ(45deg);
         transform-origin: 0% 100%;
     }
     .span2_add{
-        opacity: 0;
+        transform: translateX(-100px);
     }
     .span3_add{
         transform: rotateZ(-45deg);
@@ -78,7 +101,7 @@ html{
     top: 0%;
     width: 100%;
     height: 40px;
-    background: white;
+    background: rgba(0, 0, 0, 0.801);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +109,6 @@ html{
     transform: translateY(0px);
     transition: all 0.5s ease;
     overflow-y: hidden;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
     .grand_menu{
         position: fixed;
         list-style:none;
@@ -101,7 +122,7 @@ html{
                font-size: 16px;
                 text-decoration: none;
                 text-transform: uppercase;
-                color: black;
+                color: rgb(185, 185, 185);
                 font-family: "Nunito Sans";
                 transition: all 0.5s ease;
                 position: relative;
@@ -111,17 +132,17 @@ html{
                     bottom: 0%;
                     left: 50%;
                     transform: translateX(-50%);
-                    border:0.5px solid white;
+                    border:0px solid white;
                     width: 0%;
                     transition: all 0.5s ease;
                 }
                 &:hover{
-                    color: rgb(185, 185, 185) !important;
+                    color: yellowgreen !important;
                 }
             }
             .nav_span{
                 span{
-                    border: 0.5px solid rgb(185, 185, 185);
+                    border: 0.5px solid yellowgreen;
                     width: 100%;
                     left: 50%;
                     transform: translateX(-50%);

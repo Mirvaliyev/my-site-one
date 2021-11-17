@@ -37,7 +37,7 @@ let section=document.querySelectorAll("section");
 let navitem=document.querySelectorAll(".nav");
 let sectionbottom;
 let sectiontop;
-navitem[0].style.color="rgb(185, 185, 185)";
+navitem[0].style.color="yellowgreen";
 navitem[0].classList.add('nav_span');
 function scrollActive(){
   let sy=window.pageYOffset;
@@ -45,11 +45,11 @@ function scrollActive(){
       sectiontop=section[i].offsetTop;
       sectionbottom=section[i].offsetHeight+sectiontop;
       if(sy>=sectiontop-5&&sy<sectionbottom-5){
-        navitem[i].style.color="rgb(185, 185, 185)";
+        navitem[i].style.color="yellowgreen";
         navitem[i].classList.add('nav_span');
       }
       else{
-        navitem[i].style.color="black";
+        navitem[i].style.color="rgb(185,185,185)";
         navitem[i].classList.remove('nav_span');
       }
     }
