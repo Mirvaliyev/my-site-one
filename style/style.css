@@ -260,7 +260,7 @@ html {
 section {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   width: 100%;
   height: auto;
 }
@@ -508,6 +508,228 @@ section {
 
 .about .right a:hover {
   background: #b6b6b6;
+}
+
+.about-frontend {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+.about-frontend .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-frontend .row:nth-child(1) {
+  padding: 10px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-frontend .row:nth-child(1) h2 {
+  color: white;
+  font-family: "Nunito Sans";
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.about-frontend .row:nth-child(1) h2 strong {
+  font-weight: 700;
+}
+
+.about-frontend .row:nth-child(2) {
+  min-height: 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.about-frontend .row:nth-child(2) div {
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.about-frontend .row:nth-child(2) ._html {
+  border: 1px solid #CB4725;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #CB4725), color-stop(20%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #CB4725 80%, rgba(255, 255, 255, 0.24) 20%);
+}
+
+.about-frontend .row:nth-child(2) ._html i {
+  background-color: #CB4725;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._css {
+  border: 1px solid #42A5F5;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #42A5F5), color-stop(30%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #42A5F5 70%, rgba(255, 255, 255, 0.24) 30%);
+}
+
+.about-frontend .row:nth-child(2) ._css i {
+  background-color: #42A5F5;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._scss {
+  border: 1px solid #A8345B;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #A8345B), color-stop(30%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #A8345B 70%, rgba(255, 255, 255, 0.24) 30%);
+}
+
+.about-frontend .row:nth-child(2) ._scss i {
+  background-color: #A8345B;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._bootstrap {
+  border: 1px solid #8011F9;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #8011F9), color-stop(40%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #8011F9 60%, rgba(255, 255, 255, 0.24) 40%);
+}
+
+.about-frontend .row:nth-child(2) ._bootstrap i {
+  background-color: #8011F9;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._javascript {
+  border: 1px solid #FFCA28;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFCA28), color-stop(40%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #FFCA28 60%, rgba(255, 255, 255, 0.24) 40%);
+}
+
+.about-frontend .row:nth-child(2) ._javascript i {
+  background-color: #FFCA28;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._jquery {
+  border: 1px solid #1068AA;
+  background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1068AA), color-stop(25%, rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, #1068AA 75%, rgba(255, 255, 255, 0.24) 25%);
+}
+
+.about-frontend .row:nth-child(2) ._jquery img {
+  background-color: #1068AA;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
 }
 
 .contact {

@@ -56,36 +56,6 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive);
 
-// for(let i=0;i<navitem.length;i++){
-//   navitem[i].onclick(function(){
-//     if(i==0){
-//       setInterval(() => {
-//         $(window).scrollTop(0);
-//       }, 300);
-//     }
-//     if(i==1){
-//       setInterval(() => {
-//         $(window).scrollTop(617);
-//       }, 300);
-//     }
-//     if(i==2){
-//       setInterval(() => {
-//         $(window).scrollTop(1234);
-//       }, 300);
-//     }
-//     if(i==3){
-//       setInterval(() => {
-//         $(window).scrollTop(2035);
-//       }, 300);
-//     }
-//     if(i==4){
-//       setInterval(() => {
-//         $(window).scrollTop(2681);
-//       }, 300);
-//     }
-//   })
-// }
-
 const folioleft = ScrollReveal({
   distance: '100px',
   duration: 2000,
