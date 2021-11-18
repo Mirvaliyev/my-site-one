@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'alarm clock';
+    src: url('alarmclock.eot');
+    src: url('alarmclock.eot?#iefix') format('embedded-opentype'),
+        url('alarmclock.woff') format('woff'),
+        url('alarmclock.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

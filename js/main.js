@@ -61,14 +61,14 @@ const folioleft = ScrollReveal({
   duration: 2000,
   origin: 'left',
 })
-folioleft.reveal('.folioleft, .left, .mail', { interval: 0 });
+folioleft.reveal('.folioleft, .left, .mail, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 100 });
 
 const folioright = ScrollReveal({
   distance: '100px',
   duration: 2000,
   origin: 'right',
 })
-folioright.reveal('.folioright, .right, .adres', { interval: 0 });
+folioright.reveal('.folioright, .right, .adres', { interval: 100 });
 
 
 

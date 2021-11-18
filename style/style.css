@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'alarm clock';
+  src: url("../fonts/alarmclock.eot");
+  src: url("../fonts/alarmclock.eot?#iefix") format("embedded-opentype"), url("../fonts/alarmclock.woff") format("woff"), url("../fonts/alarmclock.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -260,7 +269,7 @@ html {
 section {
   position: relative;
   margin: 0;
-  padding: 0 5px;
+  padding: 0px;
   width: 100%;
   height: auto;
 }
@@ -564,8 +573,16 @@ section {
   border-radius: 20px;
 }
 
+.about-frontend .row:nth-child(2) div span {
+  position: absolute;
+  font-family: 'alarm clock';
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 600;
+}
+
 .about-frontend .row:nth-child(2) ._html {
-  border: 1px solid #CB4725;
   background: -webkit-gradient(linear, left top, right top, color-stop(80%, #CB4725), color-stop(20%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #CB4725 80%, rgba(255, 255, 255, 0.24) 20%);
 }
@@ -592,8 +609,11 @@ section {
   font-size: 25px;
 }
 
+.about-frontend .row:nth-child(2) ._html span {
+  left: 40%;
+}
+
 .about-frontend .row:nth-child(2) ._css {
-  border: 1px solid #42A5F5;
   background: -webkit-gradient(linear, left top, right top, color-stop(70%, #42A5F5), color-stop(30%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #42A5F5 70%, rgba(255, 255, 255, 0.24) 30%);
 }
@@ -620,8 +640,11 @@ section {
   font-size: 25px;
 }
 
+.about-frontend .row:nth-child(2) ._css span {
+  left: 35%;
+}
+
 .about-frontend .row:nth-child(2) ._scss {
-  border: 1px solid #A8345B;
   background: -webkit-gradient(linear, left top, right top, color-stop(70%, #A8345B), color-stop(30%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #A8345B 70%, rgba(255, 255, 255, 0.24) 30%);
 }
@@ -648,8 +671,11 @@ section {
   font-size: 25px;
 }
 
+.about-frontend .row:nth-child(2) ._scss span {
+  left: 35%;
+}
+
 .about-frontend .row:nth-child(2) ._bootstrap {
-  border: 1px solid #8011F9;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, #8011F9), color-stop(40%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #8011F9 60%, rgba(255, 255, 255, 0.24) 40%);
 }
@@ -676,8 +702,11 @@ section {
   font-size: 25px;
 }
 
+.about-frontend .row:nth-child(2) ._bootstrap span {
+  left: 30%;
+}
+
 .about-frontend .row:nth-child(2) ._javascript {
-  border: 1px solid #FFCA28;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFCA28), color-stop(40%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #FFCA28 60%, rgba(255, 255, 255, 0.24) 40%);
 }
@@ -704,8 +733,11 @@ section {
   font-size: 25px;
 }
 
+.about-frontend .row:nth-child(2) ._javascript span {
+  left: 30%;
+}
+
 .about-frontend .row:nth-child(2) ._jquery {
-  border: 1px solid #1068AA;
   background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1068AA), color-stop(25%, rgba(255, 255, 255, 0.24)));
   background: linear-gradient(to right, #1068AA 75%, rgba(255, 255, 255, 0.24) 25%);
 }
@@ -730,6 +762,10 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
+}
+
+.about-frontend .row:nth-child(2) ._jquery span {
+  left: 37.5%;
 }
 
 .contact {
