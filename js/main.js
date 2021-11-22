@@ -77,7 +77,7 @@ const folioleft = ScrollReveal({
   opacity:0,
   origin: 'left',
 })
-folioleft.reveal('.folioleft, .left, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 300 });
+folioleft.reveal('.folioleft, .left, .news, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 300 });
 
 const folioright = ScrollReveal({
   distance: '200px',
