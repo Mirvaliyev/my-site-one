@@ -72,18 +72,20 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive);
 
 const folioleft = ScrollReveal({
-  distance: '100px',
+  distance: '200px',
   duration: 2000,
+  opacity:0,
   origin: 'left',
 })
-folioleft.reveal('.folioleft, .left, .mail, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 100 });
+folioleft.reveal('.folioleft, .left, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 300 });
 
 const folioright = ScrollReveal({
-  distance: '100px',
+  distance: '200px',
   duration: 2000,
+  opacity:0,
   origin: 'right',
 })
-folioright.reveal('.folioright, .right, .adres', { interval: 100 });
+folioright.reveal('.folioright, .right, .r2', { interval: 300 });
 
 
 
