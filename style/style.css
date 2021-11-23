@@ -55,7 +55,7 @@ html {
 .little_menu {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 15px;
   left: 3%;
   width: 30px;
   height: 25px;
