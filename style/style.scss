@@ -40,7 +40,6 @@ body{
     background: url(../img/main_two.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     backdrop-filter: blur(7px);
     overflow-X: hidden;
@@ -836,7 +835,7 @@ section{
 }
 @media screen and(max-width:560px) {
     body{
-        background-size:auto 720px;
+        background-size:auto 100%;
     }
     .bio{
         height: 100vh;
