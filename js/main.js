@@ -77,7 +77,7 @@ const folioleft = ScrollReveal({
   opacity:0,
   origin: 'left',
 })
-folioleft.reveal('.folioleft, .left, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 300 });
+folioleft.reveal('.left, ._html, ._css, ._scss, ._bootstrap, ._javascript, ._jquery', { interval: 300 });
 
 const folioright = ScrollReveal({
   distance: '200px',
@@ -85,8 +85,15 @@ const folioright = ScrollReveal({
   opacity:0,
   origin: 'right',
 })
-folioright.reveal('.folioright, .right, .r2', { interval: 300 });
+folioright.reveal('.right, .r2', { interval: 300 });
 
+const foliobottom = ScrollReveal({
+  distance: '200px',
+  duration: 2000,
+  opacity:0,
+  origin: 'bottom',
+})
+foliobottom.reveal('.foliobottom', { interval: 300 });
 
 
 
