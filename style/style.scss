@@ -39,7 +39,7 @@
 body{
     background: url(../img/main_two.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center center;
     backdrop-filter: blur(7px);
     overflow-X: hidden;
