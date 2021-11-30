@@ -40,7 +40,8 @@ body{
     background: linear-gradient(to right bottom,#1A4A56,#001115);
     // backdrop-filter: blur(7px);
     overflow-X: hidden;
-    // background-attachment:scroll;
+    background-attachment:fixed;
+    bottom: 0%;
 }
 html{
     scroll-behavior: smooth;
@@ -219,6 +220,8 @@ section{
     width: 100%;
     height: auto;
 }
+
+// news
 .sarl{
     width: 100%;
     // border: 1px solid red;
@@ -236,7 +239,7 @@ section{
 }
 .news{
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     margin: 0px auto;
     // border: 1px solid red;
     display: flex;
@@ -245,7 +248,7 @@ section{
     padding: 0px 0px;    
     .swiper{
         // border:1px solid red;
-        // width: 50%;
+        width: 100%;
         height: auto;
         max-height: 90%;
     }
@@ -272,7 +275,7 @@ section{
 
     .swiper-slide img {
         display: block;
-        width: 400px;
+        width: 70%;
         object-fit: cover;
     }
 
@@ -281,6 +284,7 @@ section{
         margin-right: auto;
     }
 }
+
 .portfolio{
     width: 100%;
     height: auto;
@@ -321,7 +325,7 @@ section{
         a{
             width: 400px;
             position: relative;
-            margin-top: 20px;
+            margin-top: 60px;
             text-decoration: none;
             box-shadow: 0px 0px 0px white;
             transition: all 1s ease;
@@ -588,10 +592,11 @@ section{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 0px 20px;
         .mail{
-            // border: 1px solid red;
+            border: 1px solid red;
             position: relative;
-            width: 620px;
+            width: 60%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -609,36 +614,23 @@ section{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                #name, #email, #phone{
+                #name, #email, #phone, .message{
                     margin-top: 15px;
                     width: 100%;
                     padding: 16px 10px;
                     border-radius: 6px;
                     border: none;
                     outline: none;
-                    background: #333333;
+                    background: rgba(255, 255, 255, 0.596);
                     font-family: "Nunito Sans";
-                    color: rgb(185, 185, 185);
+                    color: rgba(0, 0, 0, 0.596);
                     &::placeholder{
-                        color: rgb(185, 185, 185);
+                        color: rgba(0, 0, 0, 0.6);
                         font-family: "Nunito Sans";
                     }
                 }
                 #message{
-                    margin-top: 15px;
-                    width: 100%;
                     height: 280px;
-                    padding: 16px 10px;
-                    border-radius: 6px;
-                    border: none;
-                    color: rgb(185, 185, 185);
-                    outline: none;
-                    background: #333333;
-                    font-family: "Nunito Sans";
-                    &::placeholder{
-                        color: rgb(185, 185, 185);
-                        font-family: "Nunito Sans";
-                    }
                 }
             }
             #submit{
@@ -658,8 +650,9 @@ section{
 
         }
         .adres{
-            // border: 1px solid red;
-            width: 500px;
+            padding-bottom: 200px;
+            border: 1px solid red;
+            width: 40%;
             height: auto;
             position: relative;
             display: flex;
@@ -762,23 +755,8 @@ section{
             }
         }
     }
-    .contact{
-        .contact_main{
-            .mail{
-                width: 500px;
-            }
-            .adres{
-                width: 400px;
-            }
-        }
-    }
 }
 @media screen and(max-width:980px) {
-    .news{
-        .swiper{
-            width: 60%;
-        }
-    }
     .portfolio{
         padding: 40px 40px;
     }
@@ -803,36 +781,10 @@ section{
             }
         }
     }
-    .contact{
-        .contact_main{
-            .mail{
-                width: 400px;
-            }
-            .adres{
-                width: 300px;
-            }
-        }
-    }
 }
 @media screen and(max-width:750px){
     section{
         padding: 0px 0px;
-    }
-    .news{
-        .swiper{
-            width: 70%;
-        }
-    }
-    .contact{
-        .contact_main{
-            padding: 0px 10px;
-            .mail{
-                width: 270px;
-            }
-            .adres{
-                width: 270px;
-            }
-        }
     }
 }
 @media screen and(max-width:560px) {
@@ -853,16 +805,19 @@ section{
         }
     }
     .news{
-        height: 100vh;
-        .swiper{
-            width: 80%;
+        // height: 100vh;
+        .swiper-slide{
+            padding: 20px;
+             img{
+                width: 100%;
+             }
         }
     }
     .portfolio{
-        padding: 40px 5px;
+        padding: 40px 10px;
         .main{
                 a{
-                    width: 250px;
+                    width: 100%;
                 }
         }
     }
@@ -903,8 +858,9 @@ section{
             }
         }
         .contact_main{
-            padding: 0px 10px;
+            padding: 0px 20px;
             .mail{
+                width: 100%;
                 h1{
                     font-size: 18px;
                 }
@@ -915,20 +871,15 @@ section{
                 }
             }
             .adres{
+                width: 100%;
                 padding: 0px;
                 align-items: center;
                 text-align: center;
                 h1{
                     font-size: 18px;
                 }
+                
             }
-        }
-    }
-    .sms{
-        div{
-            padding: 100px 50px;
-            width: 82%;
-            height: auto;
         }
     }
 }

@@ -32,6 +32,18 @@ $(".little_menu").click(
   }
 );
 
+setInterval(function(){
+  if(window.innerWidth<=560){
+  $('.nav').click(function () { 
+      $(".navbar").removeClass("open");  
+      $('.span1').removeClass('span1_add');
+      $('.span2').removeClass('span2_add');
+      $('.span3').removeClass('span3_add');
+      $(".ms").removeClass("span_add");
+  });
+  }
+},0)
+
 // section and  navbar
 let section=document.querySelectorAll("section");
 let navitem=document.querySelectorAll(".nav");
