@@ -38,10 +38,10 @@
 
 body{
     background: url(../img/main_two.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     backdrop-filter: blur(7px);
     overflow-X: hidden;
 }
