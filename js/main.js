@@ -42,7 +42,7 @@ setInterval(function(){
       $(".ms").removeClass("span_add");
   });
   }
-},0)
+},10)
 
 // section and  navbar
 let section=document.querySelectorAll("section");
