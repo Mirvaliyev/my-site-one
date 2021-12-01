@@ -36,12 +36,22 @@
 body {
   background: -webkit-gradient(linear, left top, right bottom, from(#1A4A56), to(#001115));
   background: linear-gradient(to right bottom, #1A4A56, #001115);
-  background-attachment: fixed;
+  overflow-X: hidden;
   bottom: 0%;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.little_menu,
+.navbar,
+.home,
+.portfolio,
+.about,
+.contact,
+.end {
+  overflow-x: visible;
 }
 
 .little_menu {

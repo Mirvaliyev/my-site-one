@@ -39,8 +39,7 @@
 body{
     background: linear-gradient(to right bottom,#1A4A56,#001115);
     // backdrop-filter: blur(7px);
-    // overflow-X: hidden;
-    background-attachment:fixed;
+    overflow-X: hidden;
     bottom: 0%;
 }
 html{
@@ -54,7 +53,7 @@ html{
 .about,
 .contact,
 .end{
-    // overflow-x: hidden;
+    overflow-x: visible;
 }
 
 .little_menu{
