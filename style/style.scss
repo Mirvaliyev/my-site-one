@@ -39,7 +39,7 @@
 body{
     background: linear-gradient(to right bottom,#1A4A56,#001115);
     // backdrop-filter: blur(7px);
-    overflow-X: hidden;
+    // overflow-X: hidden;
     background-attachment:fixed;
     bottom: 0%;
 }
@@ -54,7 +54,7 @@ html{
 .about,
 .contact,
 .end{
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .little_menu{
@@ -594,7 +594,7 @@ section{
         flex-wrap: wrap;
         padding: 0px 20px;
         .mail{
-            border: 1px solid red;
+            // border: 1px solid red;
             position: relative;
             width: 60%;
             height: auto;
@@ -651,7 +651,7 @@ section{
         }
         .adres{
             padding-bottom: 200px;
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 40%;
             height: auto;
             position: relative;

@@ -36,23 +36,12 @@
 body {
   background: -webkit-gradient(linear, left top, right bottom, from(#1A4A56), to(#001115));
   background: linear-gradient(to right bottom, #1A4A56, #001115);
-  overflow-X: hidden;
   background-attachment: fixed;
   bottom: 0%;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-.little_menu,
-.navbar,
-.home,
-.portfolio,
-.about,
-.contact,
-.end {
-  overflow-x: hidden;
 }
 
 .little_menu {
@@ -749,7 +738,6 @@ section {
 }
 
 .contact .contact_main .mail {
-  border: 1px solid red;
   position: relative;
   width: 60%;
   height: auto;
@@ -841,7 +829,6 @@ section {
 
 .contact .contact_main .adres {
   padding-bottom: 200px;
-  border: 1px solid red;
   width: 40%;
   height: auto;
   position: relative;
