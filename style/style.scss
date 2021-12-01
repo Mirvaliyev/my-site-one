@@ -53,7 +53,9 @@ html{
 .about,
 .contact,
 .end{
-    overflow-x: visible;
+    // position: absolute;
+    // overflow-x: hidden;
+    // border: 1px solid red;
 }
 
 .little_menu{
@@ -218,6 +220,7 @@ section{
     padding: 0px 200px;
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 // news

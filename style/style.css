@@ -44,16 +44,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.little_menu,
-.navbar,
-.home,
-.portfolio,
-.about,
-.contact,
-.end {
-  overflow-x: visible;
-}
-
 .little_menu {
   display: none;
   position: fixed;
@@ -280,6 +270,7 @@ section {
   padding: 0px 200px;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 
 .sarl {
