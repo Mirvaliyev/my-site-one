@@ -123,8 +123,10 @@ foliobottom.reveal('.foliobottom', { interval: 300 });
 const cnv=document.getElementById('cnv')
 const ctx=cnv.getContext('2d')
 
-cnv.width=(window.innerWidth)
-cnv.height=(window.innerHeight)
+  cnv.width=(window.innerWidth)
+  cnv.height=(window.innerHeight)
+
+
 ctx.fillStyle='#fff'
 class Drop{
   constructor(){
