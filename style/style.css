@@ -48,7 +48,7 @@ html {
   display: none;
   position: fixed;
   top: 15px;
-  left: 3%;
+  right: 3%;
   width: 30px;
   height: 25px;
   cursor: pointer;
@@ -63,6 +63,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow-Y: hidden;
+  overflow-x: hidden;
 }
 
 .little_menu .ms {
@@ -72,25 +73,27 @@ html {
   height: 0px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  background-color: white;
+  background: white;
 }
 
 .little_menu .span1 {
   -webkit-transform: rotateZ(0deg);
           transform: rotateZ(0deg);
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 
 .little_menu .span2 {
   opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .little_menu .span3 {
   -webkit-transform: rotateZ(0deg);
           transform: rotateZ(0deg);
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
 }
 
 .little_menu .span_add {
@@ -99,22 +102,19 @@ html {
 }
 
 .little_menu .span1_add {
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
 }
 
 .little_menu .span2_add {
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
 }
 
 .little_menu .span3_add {
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 .navbar {
@@ -248,6 +248,8 @@ html {
   -webkit-transform: translateX(-400px);
           transform: translateX(-400px);
   opacity: 0;
+  color: transparent;
+  -webkit-text-stroke: .5px white;
 }
 
 .bio span {

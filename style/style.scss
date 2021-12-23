@@ -6,8 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -45,50 +43,55 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.snov{
 
-.little_menu,
-.navbar,
-.home,
-.portfolio,
-.about,
-.contact,
-.end{
-    // border: 1px solid red;
 }
+
+// .little_menu,
+// .navbar,
+// .home,
+// .portfolio,
+// .about,
+// .contact,
+// .end{
+//     // border: 1px solid red;
+// }
+
 
 .little_menu{
     display: none;
     position: fixed;
     top:15px;
-    left: 3%;
+    right: 3%;
     width: 30px;
     height: 25px;
     cursor: pointer;
     z-index: 200;
     transition: all 1s ease;
-    // display: flex;
     flex-direction: column;
     justify-content:space-between;
-    // border: 1px solid red;
     overflow-Y: hidden;
+    overflow-x: hidden;
+    // border: 1px solid red;
     .ms{
         position: relative;
         width: 100%;
         border: 1px solid white;
         height: 0px;
         transition: all 1s ease;
-        background-color: white;    
+        background: white;    
     }
     .span1{
         transform: rotateZ(0deg);
-        transform-origin: 0% 0%;
+        transform-origin: 100% 100%;
     }
     .span2{
         opacity: 1;
+        transform: translateX(0px);
     }
     .span3{
         transform: rotateZ(0deg);
-        transform-origin: 0% 0%;
+        transform-origin: 100% 0%;
     }
     // span classlar
     .span_add{
@@ -96,15 +99,14 @@ html{
         background-color: yellowgreen;
     }
     .span1_add{
-        transform: rotateZ(45deg);
-        transform-origin: 0% 100%;
+        transform: rotateZ(-45deg);
     }
     .span2_add{
-        transform: translateX(-100px);
+        transform: translateX(50px);
+        opacity: 0;
     }
     .span3_add{
-        transform: rotateZ(-45deg);
-        transform-origin: 0% 0%;
+        transform: rotateZ(45deg);
     }
 }
 .navbar{
@@ -199,6 +201,8 @@ html{
         transition: all 1s ease;
         transform: translateX(-400px);
         opacity: 0;
+        color: transparent;
+        -webkit-text-stroke: .5px white;
     }
     span{
         text-align: center;
