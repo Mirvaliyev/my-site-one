@@ -44,6 +44,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#cnv {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
 .little_menu {
   display: none;
   position: fixed;
